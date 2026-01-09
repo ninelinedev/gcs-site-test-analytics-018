@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-50: {{primary50}};
+  --color-primary-100: {{primary100}};
+  --color-primary-200: {{primary200}};
+  --color-primary-300: {{primary300}};
+  --color-primary-400: {{primary400}};
+  --color-primary-500: {{primary500}};
+  --color-primary-600: {{primary600}};
+  --color-primary-700: {{primary700}};
+  --color-primary-800: {{primary800}};
+  --color-primary-900: {{primary900}};
+  --color-accent-50: {{accent50}};
+  --color-accent-100: {{accent100}};
+  --color-accent-200: {{accent200}};
+  --color-accent-300: {{accent300}};
+  --color-accent-400: {{accent400}};
+  --color-accent-500: {{accent500}};
+  --color-accent-600: {{accent600}};
+  --color-accent-700: {{accent700}};
+  --color-accent-800: {{accent800}};
+  --color-accent-900: {{accent900}};
+}
+
+.service-item {
+  @apply bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition;
+}
+
+.service-item::before {
+  content: "✓";
+  @apply text-accent-500 font-bold mr-3;
+}
